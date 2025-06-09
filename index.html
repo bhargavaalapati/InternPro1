@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div id="offer-popup" class="offer-popup">
+    <div class="offer-card">
+        <h2>🔥 Special Offer!</h2>
+        <p>Get <b>20% OFF</b> on your first customization order.<br>Use code: <span style="color:#f16775;font-weight:bold;">CAR20</span></p>
+        <button onclick="closeOffer()" class="custom-btn">Got it!</button>
+    </div>
+</div>
+    <nav class="navbar">
+    <a class="car-icon" href="#customization"><i class="fa fa-car"></i></a>
+    <a href="#Home">Home</a> |
+    <a href="#aboutUs">About Us</a> |
+    <a href="#customization">Customization</a> |
+    <a href="#contactUs">Contact Us</a>
+    </nav>
+    <div class="bg-container" id="Home">
+       <!-- <h1 class="main-heading">Welcome to Shopping Cart</h1>-->
+        <p class="paragraph">Welcome to my corner of the internet! I'm passionate about everything automotive — from classic muscle cars ...</p>
+        <div class="card-container">
+            <div class="card">
+                <h1 class="name">Koenigsegg</h1>
+                <img src="images/koenigsegg-jesko.webp" class="image1" />
+                <div class="card-footer-container">
+                    <a class="read-more" href="https://www.motor1.com/koenigsegg/news/">Read more...</a>
+                </div>
+            </div>
+             <div class="card">
+                <h1 class="name">Dodge</h1>
+                <img src="images/dogebg.jpg" class="image1" />
+                <div class="card-footer-container">
+                   <a class="read-more" href="https://www.motor1.com/dodge/news/">Read more...</a>
+                </div>
+            </div>
+             <div class="card">
+                <h1 class="name">Ford Rs</h1>
+                <img src="images/Rs200.avif" class="image1" />
+                <div class="card-footer-container">
+                   <a class="read-more" href="https://www.drive.com.au/tag/ford-rs/">Read more...</a>
+                </div>
+            </div>
+             <div class="card">
+                <h1 class="name">Formula1 Ferrari</h1>
+                <img src="images/Formula 1.avif" class="image1" />
+                <div class="card-footer-container">
+                    <a class="read-more" href="https://www.formula1.com/en/latest/article/drivers-teams-cars-circuits-and-more-everything-you-need-to-know-about.7iQfL3Rivf1comzdqV5jwc">Read more...</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+   <div class="aboutusSection" id="aboutUs">
+    <img src="images/samuele-errico-piccarini-FMbWFDiVRPs-unsplash.jpg" alt="About Us Car" />
+    <main>
+        <h1 class="main-heading">About Us</h1>
+        <p class="aboutusPara">
+            I'm a car enthusiast with a passion for performance, design, and customization.<br>
+            From supercars to rally legends, I love exploring the details that make each ride unique.<br>
+            My interest led me to create a platform where car lovers can browse parts, accessories, and more.<br>
+            I'm especially drawn to cars like Koenigsegg hypercars, the classic Dodge muscle lineup, Ford RS rally beasts, and cutting-edge Formula 1 machines.<br>
+            This site is all about connecting enthusiasts with the tools and products they need to bring their car visions to life.<br>
+            Whether you're building a show car, tuning your daily driver, or just browsing, you're welcome here.
+        </p>
+    </main>
+</div>
+        <hr>
+<!-- After About Us section, add: -->
+    <div class="customizationSection" id="customization">
+        <main>
+            <h1 class="main-heading">Customization</h1>
+            <p class="aboutusPara">
+                Personalize your ride! Choose from a wide range of performance parts, stylish accessories, and unique modifications.<br>
+                <ul>
+                    <li><i class="fa fa-cogs"></i> Engine Upgrades</li>
+                    <li><i class="fa fa-paint-roller"></i> Custom Paint & Wraps</li>
+                    <li><i class="fa fa-wheelchair"></i> Alloy Wheels & Tires</li>
+                    <li><i class="fa fa-lightbulb"></i> Lighting Mods</li>
+                    <li><i class="fa fa-music"></i> Audio Systems</li>
+                </ul>
+                <button disabled style="background-color: #f16775; color:#ffffff; padding: 10px 20px; border: none; border-radius: 5px; cursor: not-allowed;" title="Available in coming days">
+                    Start Customizing
+                </button>
+            </p>
+        </main>
+    </div>
+    <hr>
+    <div class="contactSection" id="contactUs">
+        <main>
+            <h1 class="main-heading">Contact Us</h1>
+            <p class="aboutusPara">
+                Have questions or want to collaborate? Reach out!
+            </p>
+            <form class="contact-form">
+                <label for="name"><i class="fa fa-user"></i> Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email"><i class="fa fa-envelope"></i> Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message"><i class="fa fa-comment"></i> Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <button type="submit" class="custom-btn"><i class="fa fa-paper-plane"></i> Send</button>
+            </form>
+        </main>
+    </div>
+    <footer style="text-align:center; padding:1em 0;">
+        <span>&copy; 2025 Shopping Cart. All rights reserved.</span>
+        <div>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/i/flow/login?lang=en"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+    </div>
+
+<script>
+ function generateOfferCode() {
+    const code = "CAR" + Math.floor(1000 + Math.random() * 9000); // e.g., CAR2345
+    document.querySelector('#offer-popup span').textContent = code;
+}
+ generateOfferCode(); 
+
+function closeOffer() {
+  document.getElementById('offer-popup').style.display = 'none';
+}
+window.onload = function() {
+  setTimeout(function() {
+    document.getElementById('offer-popup').style.display = 'flex';
+  }, 800); // show after 0.8s
+};
+</script>
+<script>
+// Scroll to Home when clicking on blank space
+document.body.addEventListener('click', function(e) {
+    // Ignore clicks on links, buttons, inputs, forms, etc.
+    if (
+        e.target.tagName === 'A' ||
+        e.target.tagName === 'BUTTON' ||
+        e.target.closest('form') ||
+        e.target.tagName === 'INPUT' ||
+        e.target.tagName === 'TEXTAREA'
+    ) {
+        return;
+    }
+    // Scroll to Home section
+    document.getElementById('Home').scrollIntoView({ behavior: 'smooth' });
+});
+</script>
+</body>
+</html>
